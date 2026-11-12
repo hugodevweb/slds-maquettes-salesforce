@@ -2,7 +2,7 @@
 
 ## Salesforce Lightning Design System 2.264.1
 
-Files: `assets/slds.min.css`, `assets/icons/*.svg`, `assets/avatar1.jpg`, `assets/avatar2.jpg`.
+Files (under `skills/slds-maquettes-salesforce/`): `assets/slds.min.css`, `assets/icons/*.svg`, `assets/avatar1.jpg`, `assets/avatar2.jpg`.
 Source: https://github.com/salesforce-ux/design-system, redistributed unmodified.
 
 Copyright (c) 2015-present, Salesforce, Inc. All rights reserved.

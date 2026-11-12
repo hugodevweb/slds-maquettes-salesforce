@@ -6,13 +6,20 @@ Chaque maquette sort en un seul fichier HTML autonome, qui s'ouvre hors ligne da
 
 ## Installation
 
-Claude Code (skill personnel) :
+Claude Code, comme plug-in (marketplace) :
 
-```bash
-git clone https://github.com/hugodevweb/slds-maquettes-salesforce ~/.claude/skills/slds-maquettes-salesforce
+```
+/plugin marketplace add hugodevweb/slds-maquettes-salesforce
+/plugin install slds-maquettes-salesforce@slds-maquettes-salesforce
 ```
 
-Claude.ai ou Claude Desktop : téléchargez le dépôt en ZIP, puis importez-le dans Réglages > Capacités > Skills.
+Depuis Claude Code 2.1.275, une seule ligne suffit :
+
+```
+/plugin install slds-maquettes-salesforce --marketplace hugodevweb/slds-maquettes-salesforce
+```
+
+Claude.ai ou Claude Desktop : téléchargez le dossier `skills/slds-maquettes-salesforce` en ZIP, puis importez-le dans Réglages > Capacités > Skills.
 
 ## Utilisation
 
@@ -23,6 +30,8 @@ python3 scripts/build_mockup.py maquette.html maquette_final.html
 ```
 
 ## Contenu
+
+Le skill est dans `skills/slds-maquettes-salesforce/` :
 
 - `SKILL.md` : règles et procédure suivies par Claude.
 - `references/` : patrons de pages et markup des composants courants.
