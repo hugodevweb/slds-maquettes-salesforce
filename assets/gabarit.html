@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maquette Salesforce</title>
+  <!-- SLDS-CSS -->
+  <style>
+    /* Seulement pour la maquette : fond de page Lightning et pied de légende */
+    html, body { background: #f3f3f3; min-height: 100%; }
+    .app-body { padding: 1rem; }
+    /* NOUVEAU COMPOSANT : ajouter ici le CSS propre à la nouvelle fonctionnalité */
+  </style>
+</head>
+<body>
+<!-- SLDS-ICONS -->
+<div class="slds-scope">
+
+  <!-- Barre globale (recherche, aide, notifications, profil) -->
+  <div class="slds-global-header_container" style="position:static">
+    <header class="slds-global-header slds-grid slds-grid_align-spread">
+      <div class="slds-global-header__item">
+        <div class="slds-global-header__logo" style="width:auto;background:none"></div>
+      </div>
+      <div class="slds-global-header__item slds-global-header__item_search">
+        <div class="slds-form-element">
+          <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+            <svg class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default" aria-hidden="true">
+              <use href="#utility-search"></use>
+            </svg>
+            <input type="search" class="slds-input" placeholder="Rechercher..." />
+          </div>
+        </div>
+      </div>
+      <ul class="slds-global-header__item slds-grid slds-grid_vertical-align-center">
+        <li class="slds-p-horizontal_xx-small">
+          <button class="slds-button slds-button_icon slds-button_icon-container slds-button_icon-small" title="Aide">
+            <svg class="slds-button__icon" aria-hidden="true"><use href="#utility-question"></use></svg>
+          </button>
+        </li>
+        <li class="slds-p-horizontal_xx-small">
+          <button class="slds-button slds-button_icon slds-button_icon-container slds-button_icon-small" title="Notifications">
+            <svg class="slds-button__icon" aria-hidden="true"><use href="#utility-notification"></use></svg>
+          </button>
+        </li>
+        <li class="slds-p-horizontal_xx-small">
+          <span class="slds-avatar slds-avatar_circle slds-avatar_small">
+            <abbr class="slds-avatar__initials slds-icon-standard-user" title="Utilisateur">MD</abbr>
+          </span>
+        </li>
+      </ul>
+    </header>
+  </div>
+
+  <!-- Barre de navigation de l'application -->
+  <div class="slds-context-bar">
+    <div class="slds-context-bar__primary">
+      <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click">
+        <div class="slds-context-bar__icon-action">
+          <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Lanceur d'applications">
+            <span class="slds-icon-waffle">
+              <span class="slds-r1"></span><span class="slds-r2"></span><span class="slds-r3"></span>
+              <span class="slds-r4"></span><span class="slds-r5"></span><span class="slds-r6"></span>
+              <span class="slds-r7"></span><span class="slds-r8"></span><span class="slds-r9"></span>
+            </span>
+          </button>
+        </div>
+        <span class="slds-context-bar__label-action slds-context-bar__app-name">
+          <span class="slds-truncate" title="Ventes">Ventes</span>
+        </span>
+      </div>
+    </div>
+    <nav class="slds-context-bar__secondary" role="navigation">
+      <ul class="slds-grid">
+        <li class="slds-context-bar__item"><a href="#" class="slds-context-bar__label-action"><span class="slds-truncate">Accueil</span></a></li>
+        <li class="slds-context-bar__item slds-is-active"><a href="#" class="slds-context-bar__label-action"><span class="slds-truncate">Opportunités</span></a></li>
+        <li class="slds-context-bar__item"><a href="#" class="slds-context-bar__label-action"><span class="slds-truncate">Comptes</span></a></li>
+        <li class="slds-context-bar__item"><a href="#" class="slds-context-bar__label-action"><span class="slds-truncate">Contacts</span></a></li>
+        <li class="slds-context-bar__item"><a href="#" class="slds-context-bar__label-action"><span class="slds-truncate">Rapports</span></a></li>
+        <li class="slds-context-bar__item"><a href="#" class="slds-context-bar__label-action"><span class="slds-truncate">Tableaux de bord</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Contenu de la page -->
+  <main class="app-body">
+    <!-- Coller ici le patron de page choisi (voir references/patterns.md) -->
+  </main>
+
+</div>
+</body>
+</html>
